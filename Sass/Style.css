@@ -1,0 +1,175 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+body h1 {
+  font-size: 6rem;
+  text-align: center;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+body .user_cotent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .user_cotent input {
+  font-size: 3rem;
+  padding: .3rem 1rem;
+  width: 42rem;
+  background-color: #dbffda;
+  outline: none;
+  border: none;
+}
+
+body .user_cotent button {
+  background-color: #0ecf07;
+  font-size: 3rem;
+  padding: .3rem 1rem;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body .user_cotent button:hover {
+  background-color: #ffffff;
+  color: #0ecf07;
+}
+
+body .all_task {
+  background-color: wheat;
+  width: 90vw;
+  margin: 2rem auto;
+  padding: 1rem 2rem 3rem 2rem;
+  border-radius: 2.5rem;
+}
+
+body .all_task .todo_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10rem;
+}
+
+body .all_task .todo_list .li_div li {
+  margin-top: 1.5rem;
+}
+
+body .all_task .todo_list .li_div li::marker {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+body .all_task .todo_list .li_div li span {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+body .all_task .todo_list .li_div li input {
+  float: left;
+  margin-right: 1rem;
+}
+
+body .all_task .todo_list p {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 -2rem 0;
+}
+
+body .delet_all_btn {
+  margin: auto;
+  display: block;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  background-color: #ff0202;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .2s;
+  transition: all ease-in-out .2s;
+}
+
+body .delet_all_btn:hover {
+  background-color: #ffffff;
+  color: #ff0202;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+body .completed {
+  color: #0ecf07;
+  opacity: .5;
+}
+
+body .delete_task_btn, body .complet_task_btn, body .sub_task_add_btn {
+  font-size: 1.5rem;
+  padding: .8rem 1rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+  -webkit-transition: all ease-in-out .15s;
+  transition: all ease-in-out .15s;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(126, 126, 126, 0.952));
+          filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(126, 126, 126, 0.952));
+}
+
+body .delete_task_btn {
+  background-color: #ff0202;
+}
+
+body .delete_task_btn:hover {
+  color: #ff0202;
+  background-color: transparent;
+}
+
+body .complet_task_btn {
+  background-color: #17ff02;
+  padding: .85rem 1rem;
+}
+
+body .complet_task_btn:hover {
+  color: #17ff02;
+  background-color: transparent;
+}
+
+body .sub_task_add_btn {
+  background-color: #066e6e;
+}
+
+body .sub_task_add_btn:hover {
+  color: #066e6e;
+  background-color: transparent;
+}
+/*# sourceMappingURL=Style.css.map */

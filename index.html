@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <!-- fontawesome_CDN -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+   <!-- googleFont_CDN -->
+   <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+   <!-- css -->
+   <link rel="stylesheet" href="./Sass/Style.css">
+</head>
+<body>
+   <h1> To-Do App</h1>
+   <div class="user_cotent">
+      <input class="todo_input" placeholder="Enter Here"></input>
+      <button class="add_todo_main_btn" onclick="mainHandlers.addTodo()">+</button>
+   </div>
+  <div class="all_task">
+      <ul class="todo_list">
+
+      </ul>
+  </div>
+   <button class="delet_all_btn" onclick="mainHandlers.deleteAll()"> Delete All</button>
+
+   <script type="text/javascript" src="./script/app.js"></script>
+</body>
+</html>

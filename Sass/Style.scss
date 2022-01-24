@@ -1,0 +1,138 @@
+*{
+   box-sizing: border-box;
+}
+html{
+   font-size: 62.5%;
+}
+body{
+   font-family: sans-serif;
+   h1{
+      font-size: 6rem;
+      text-align: center;
+      font-family: 'Allerta Stencil', sans-serif;
+   }
+   .user_cotent{
+      display: flex;
+      justify-content: center;
+      input{
+         font-size: 3rem;
+         padding: .3rem 1rem;
+         width: 42rem;
+         background-color: #dbffda;
+         outline: none;
+         border: none;
+      }
+      button{
+         background-color: #0ecf07;
+         font-size: 3rem;
+         padding: .3rem 1rem;  
+         color: #ffffff;
+         font-weight: 600;
+         transition: all ease-in-out .15s;
+         outline: none;
+         border: none;
+         cursor: pointer;
+         &:hover{
+            background-color: #ffffff;
+            color: #0ecf07;
+         }
+      }
+   }
+   .all_task{
+      background-color: wheat;
+      width: 90vw;
+      margin: 2rem auto;
+      padding: 1rem 2rem 3rem 2rem;
+      border-radius: 2.5rem;
+      .todo_list{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin-left: 10rem;
+         .li_div{
+            li{
+               margin-top: 1.5rem;
+               &::marker{
+                  font-size: 2.5rem;
+                  margin-top: 1rem;
+               }
+               span{
+                  font-size: 2rem;
+                  margin-right: 1rem;
+
+               }
+               input{
+                  float: left;
+                  margin-right: 1rem;
+               }
+            }
+         }
+         p{
+            font-size: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0 0 -2rem 0;
+         }
+      }
+   }
+   .delet_all_btn{
+      margin: auto;
+      display: block;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      border: none;
+      outline: none;
+      background-color: #ff0202;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all ease-in-out .2s;
+      &:hover{
+         background-color: #ffffff;
+         color: #ff0202;
+         box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.75);
+      }
+   }
+
+   // // dynamic class
+   .completed{
+      color: #0ecf07;
+      opacity: .5;
+   }
+   .delete_task_btn, .complet_task_btn, .sub_task_add_btn{
+      font-size: 1.5rem;
+      padding: .8rem 1rem;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      margin-left: 1rem;
+      transition: all ease-in-out .15s;
+      cursor: pointer;
+      color: #ffffff;
+      filter: drop-shadow(.2rem .2rem .5rem rgba(126, 126, 126, 0.952));
+   }
+   .delete_task_btn{
+      background-color: #ff0202;
+      &:hover{
+         color: #ff0202;
+         background-color: transparent;
+      }
+   }
+   .complet_task_btn{
+      background-color: #17ff02;
+      padding: .85rem 1rem;
+      &:hover{
+         color: #17ff02;
+         background-color: transparent;
+      }
+   }
+   .sub_task_add_btn{
+      background-color: #066e6e;
+      &:hover{
+         color: #066e6e;
+         background-color: transparent;
+      }
+   }
+}
