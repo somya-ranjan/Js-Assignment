@@ -16,18 +16,44 @@
    <link rel="stylesheet" href="./Sass/Style.css">
 </head>
 <body>
+   <nav>
+      <i class="fad fa-clipboard-list"></i>
+      <div class="search_div">
+         <input type="search" id="searchBox" onkeyup="mainHandlers.searchToDo()">
+         <i class="fas fa-search"></i>
+         <!-- <button><i class="fas fa-search"></i></button> -->
+      </div>
+   </nav>
+
+   <!-- module -->
+   <div class="module_container">
+      <div class="module_container_hero">
+         <div class="logo">
+            <i class="far fa-clipboard-list"></i>
+        </div>
+        <input type="text" class="todo_input" placeholder="Enter Your Task">
+        <div class="btn">
+            <button class="add_todo_main_btn" onclick="mainHandlers.addTodo()">Save</button>
+            <button id="module_close_btn" onclick="mainHandlers.closeModule()">Close</button>
+        </div>
+      </div>
+   </div>
+
    <h1> To-Do App</h1>
-   <div class="user_cotent">
+   <!-- <div class="user_cotent">
       <input class="todo_input" placeholder="Enter Here"></input>
       <button class="add_todo_main_btn" onclick="mainHandlers.addTodo()">+</button>
-   </div>
-  <div class="all_task">
+   </div> -->
+   <button class="main_btn" onclick="mainHandlers.openModule()">Add Task</button>
+  <div id="all_task">
       <ul class="todo_list">
 
       </ul>
   </div>
    <button class="delet_all_btn" onclick="mainHandlers.deleteAll()"> Delete All</button>
 
+
+   
    <script type="text/javascript" src="./script/app.js"></script>
 </body>
 </html>

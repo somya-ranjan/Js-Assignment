@@ -1,11 +1,156 @@
 *{
    box-sizing: border-box;
+   margin: 0;
 }
 html{
    font-size: 62.5%;
 }
 body{
    font-family: sans-serif;
+
+   // nav
+   nav{
+      padding: 1rem 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #d8d8d8;
+      i{
+
+         font-size: 5rem;
+      }
+      .search_div{
+         display: flex;
+         align-items: center;
+         border-radius: 2.5rem;
+         padding: .5rem .7rem;
+         background-color: #ffffff;
+         input{
+            padding: 0 1rem;
+            font-size: 2rem;
+            outline: none;
+            border: none;
+         }
+         i{
+            font-size: 2.3rem;
+            color: #8f8f8f;
+         }
+      }
+   }
+   button{
+      cursor: pointer;
+   }
+   .main_btn{
+      background-color: #0bca24;
+      color: #ffffff;
+      font-weight: 600;
+      display: block;
+      margin: 2rem auto;
+      padding: 1rem 5rem;
+      font-size: 2.5rem;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 10px 0px rgb(233, 233, 233);
+   }
+   // module
+   .module_container{
+      position: relative;
+      z-index: 1000;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(106, 114, 88);
+      opacity: .9;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .module_container_hero{
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         height: 25rem;
+         width: 45rem;
+         background-color: wheat;
+         border-radius: 2.5rem;
+         box-shadow: 1px 1px 17px 0px rgb(78, 77, 77);
+         margin-top: -20rem;
+         .logo{
+            position: absolute;
+            top: -35%;
+            left: 50%;
+            transform: translate(-50%,35%);
+            i{
+               margin: auto;
+               font-size: 4.5rem;
+               padding: 3rem 3.5rem;
+               border-radius: 50%;
+               background-color: wheat;
+               color: #3a1be7;
+            }
+         }
+         input {
+            width: 35rem;
+            height: 4rem;
+            font-size: 2rem;
+            padding: 0 1rem;
+            margin-bottom: 2rem;
+          }
+         .btn {
+            padding-top: 2rem;
+            button {
+              font-size: 2rem;
+              padding: 0.3rem 2rem;
+              margin: 0 2rem 0 2rem;
+              border: none;
+              outline: none;
+              &:nth-child(1) {
+                background-color: #0bca24;
+                color: #ffffff;
+                &:hover {
+                  background-color: #ffffff;
+                  color: #0bca24;
+                }
+              }
+              &:nth-child(2) {
+                background-color: #f52d0a;
+                color: #ffffff;
+                &:hover {
+                  background-color: #ffffff;
+                  color: #f52d0a;
+                }
+              }
+            }
+         }
+      }
+   }
+
+   // module open animation
+   .moduleOpen{
+      animation: openModule .4s linear;
+   }
+   @keyframes openModule {
+      0%{
+         opacity: 0;
+      }
+      25%{
+         opacity: .25;
+      }
+      50%{
+         opacity: .5;
+      }
+      75%{
+         opacity: .75;
+      }
+      100%{
+         opacity: 1;
+      }
+   }
+   
+
    h1{
       font-size: 6rem;
       text-align: center;
@@ -38,7 +183,9 @@ body{
          }
       }
    }
-   .all_task{
+
+   // todo_body
+   #all_task{
       background-color: wheat;
       width: 90vw;
       margin: 2rem auto;
@@ -49,8 +196,8 @@ body{
          flex-direction: column;
          justify-content: center;
          margin-left: 10rem;
-         .li_div{
             li{
+               cursor: move;
                margin-top: 1.5rem;
                &::marker{
                   font-size: 2.5rem;
@@ -63,10 +210,8 @@ body{
                }
                input{
                   float: left;
-                  margin-right: 1rem;
                }
             }
-         }
          p{
             font-size: 2rem;
             text-align: center;
