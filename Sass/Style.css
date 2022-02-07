@@ -73,28 +73,25 @@ body .main_btn {
           box-shadow: 1px 1px 10px 0px #e9e9e9;
 }
 
-body .module_container {
+body .modal_container {
   position: relative;
   z-index: 1000;
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: #6a7258;
-  opacity: .9;
+  background-color: rgba(106, 114, 88, 0.8);
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body .module_container .module_container_hero {
+body .modal_container .modal_container_hero {
+  margin-top: 12rem;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,10 +112,9 @@ body .module_container .module_container_hero {
   border-radius: 2.5rem;
   -webkit-box-shadow: 1px 1px 17px 0px #4e4d4d;
           box-shadow: 1px 1px 17px 0px #4e4d4d;
-  margin-top: -20rem;
 }
 
-body .module_container .module_container_hero .logo {
+body .modal_container .modal_container_hero .logo {
   position: absolute;
   top: -35%;
   left: 50%;
@@ -126,7 +122,7 @@ body .module_container .module_container_hero .logo {
           transform: translate(-50%, 35%);
 }
 
-body .module_container .module_container_hero .logo i {
+body .modal_container .modal_container_hero .logo i {
   margin: auto;
   font-size: 4.5rem;
   padding: 3rem 3.5rem;
@@ -135,7 +131,7 @@ body .module_container .module_container_hero .logo i {
   color: #3a1be7;
 }
 
-body .module_container .module_container_hero input {
+body .modal_container .modal_container_hero input {
   width: 35rem;
   height: 4rem;
   font-size: 2rem;
@@ -143,11 +139,11 @@ body .module_container .module_container_hero input {
   margin-bottom: 2rem;
 }
 
-body .module_container .module_container_hero .btn {
+body .modal_container .modal_container_hero .btn {
   padding-top: 2rem;
 }
 
-body .module_container .module_container_hero .btn button {
+body .modal_container .modal_container_hero .btn button {
   font-size: 2rem;
   padding: 0.3rem 2rem;
   margin: 0 2rem 0 2rem;
@@ -155,64 +151,74 @@ body .module_container .module_container_hero .btn button {
   outline: none;
 }
 
-body .module_container .module_container_hero .btn button:nth-child(1) {
+body .modal_container .modal_container_hero .btn button:nth-child(1) {
   background-color: #0bca24;
   color: #ffffff;
 }
 
-body .module_container .module_container_hero .btn button:nth-child(1):hover {
+body .modal_container .modal_container_hero .btn button:nth-child(1):hover {
   background-color: #ffffff;
   color: #0bca24;
 }
 
-body .module_container .module_container_hero .btn button:nth-child(2) {
+body .modal_container .modal_container_hero .btn button:nth-child(2) {
   background-color: #f52d0a;
   color: #ffffff;
 }
 
-body .module_container .module_container_hero .btn button:nth-child(2):hover {
+body .modal_container .modal_container_hero .btn button:nth-child(2):hover {
   background-color: #ffffff;
   color: #f52d0a;
 }
 
-body .moduleOpen {
-  -webkit-animation: openModule .4s linear;
-          animation: openModule .4s linear;
+body .modalOpen {
+  -webkit-animation: openModal .3s linear;
+          animation: openModal .3s linear;
 }
 
-@-webkit-keyframes openModule {
+@-webkit-keyframes openModal {
   0% {
     opacity: 0;
+    margin-top: -12rem;
   }
   25% {
     opacity: .25;
+    margin-top: 7rem;
   }
   50% {
     opacity: .5;
+    margin-top: 12em;
   }
   75% {
     opacity: .75;
+    margin-top: 14rem;
   }
   100% {
     opacity: 1;
+    margin-top: 13rem;
   }
 }
 
-@keyframes openModule {
+@keyframes openModal {
   0% {
     opacity: 0;
+    margin-top: -12rem;
   }
   25% {
     opacity: .25;
+    margin-top: 7rem;
   }
   50% {
     opacity: .5;
+    margin-top: 12em;
   }
   75% {
     opacity: .75;
+    margin-top: 14rem;
   }
   100% {
     opacity: 1;
+    margin-top: 13rem;
   }
 }
 

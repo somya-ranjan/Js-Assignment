@@ -53,20 +53,20 @@ body{
       border-radius: 0.5rem;
       box-shadow: 1px 1px 10px 0px rgb(233, 233, 233);
    }
-   // module
-   .module_container{
+   // Modal
+   .modal_container{
       position: relative;
       z-index: 1000;
       position: fixed;
       height: 100%;
       width: 100%;
-      background-color: rgb(106, 114, 88);
-      opacity: .9;
+      background-color: rgba(106, 114, 88, 0.8);
       display: none;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
-      .module_container_hero{
+      .modal_container_hero{
+         margin-top: 12rem;
          position: relative;
          display: flex;
          justify-content: center;
@@ -77,7 +77,6 @@ body{
          background-color: wheat;
          border-radius: 2.5rem;
          box-shadow: 1px 1px 17px 0px rgb(78, 77, 77);
-         margin-top: -20rem;
          .logo{
             position: absolute;
             top: -35%;
@@ -128,25 +127,30 @@ body{
       }
    }
 
-   // module open animation
-   .moduleOpen{
-      animation: openModule .4s linear;
+   // Modal  open animation
+   .modalOpen{
+      animation: openModal .3s linear;
    }
-   @keyframes openModule {
+   @keyframes openModal {
       0%{
          opacity: 0;
+         margin-top: -12rem;
       }
       25%{
          opacity: .25;
+         margin-top: 7rem;
       }
       50%{
          opacity: .5;
+         margin-top: 12em;
       }
       75%{
          opacity: .75;
+         margin-top: 14rem;
       }
       100%{
          opacity: 1;
+         margin-top: 13rem;
       }
    }
    

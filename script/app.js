@@ -41,23 +41,23 @@ const todoList = {
 }
 
 
-let moduleContainer=document.querySelector('.module_container')
-let module=document.querySelector('.module_container_hero')
+let modalContainer=document.querySelector('.modal_container')
+let modal=document.querySelector('.modal_container_hero')
 const mainHandlers = {
-  openModule: function(){
-    moduleContainer.style.display="flex"
-    module.className="moduleOpen module_container_hero"
+  openModal: function(){
+    modalContainer.style.display="flex"
+    modal.className="modalOpen modal_container_hero"
   },
-  closeModule: function(){
+  closeModal: function(){
     let todoInput = document.querySelector('.todo_input');
     todoInput.value = "";
-    moduleContainer.style.display="none"
+    modalContainer.style.display="none"
   },
   addTodo: function () {
     let todoInput = document.querySelector('.todo_input');
     todoList.addTodo(todoInput.value, todoList.todos, todoList.todos.length);
     todoInput.value = "";
-    moduleContainer.style.display="none"
+    modalContainer.style.display="none"
     view.render();
   },
 
